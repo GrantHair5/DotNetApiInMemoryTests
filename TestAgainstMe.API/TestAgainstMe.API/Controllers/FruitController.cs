@@ -18,7 +18,7 @@ namespace TestAgainstMe.API.Controllers
         }
 
         [HttpGet]
-        [Route("FruitInBasket")]
+        [Route("FruitsInBasket")]
         public IEnumerable<Fruit> GetAllInBasket([FromQuery] string nameOfFruit)
         {
             return _fruitRetrievalService.GetAllInBasket(nameOfFruit);
